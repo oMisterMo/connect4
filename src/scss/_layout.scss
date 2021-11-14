@@ -1,0 +1,82 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #aacfef54;
+
+  .toolbar {
+    height: 58px;
+    background-color: rgb(136, 157, 188);
+  }
+  .content {
+    margin: 0 auto;
+    padding: 0px 20px 30px 20px;
+    position: relative;
+    width: 80%;
+    // height: 100%;
+    height: 90vh;
+    min-width: max-content;
+    min-height: 100%;
+    background-color: #f4fbff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    $size: 400px;
+    $row: 5;
+    $col: 7;
+    #board {
+      margin: 20px;
+      min-height: $size;
+      min-width: $size;
+      background-color: rgb(127, 197, 255);
+      border: 5px solid;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // grid-template-columns: repeat(7, minmax(0, 1fr));
+      .col {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 55px;
+
+        &:hover {
+          background-color: rgba(245, 222, 179, 0.39);
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        .counter {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 2px solid;
+        }
+        //  test
+        // .counter:nth-child(even) {
+        //   background-color: yellow;
+        // }
+        // .counter:nth-child(odd) {
+        //   background-color: red;
+        // }
+      }
+    }
+
+    #reset {
+      width: 100px;
+      height: 40px;
+      border-radius: 10px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

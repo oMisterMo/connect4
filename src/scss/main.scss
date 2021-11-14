@@ -1,0 +1,51 @@
+//Import other sass here, prefix used to denote a partial (file loaded into main, doesn't get generated)
+//@use is only supported by Dart-Sass (yet, and probably forever).
+@import "./colors";
+@import "./fonts";
+@import "./layout";
+
+//My stuff
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  // font-size: 100%;
+  // font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  // font-size: 16px;
+  color: $default-gray;
+  font-size: 100%;
+  font-family: "PT Sans", "Helvetica Neue", Arial, "PingFang SC",
+    "microsoft yahei", "hiragino sans gb", sans-serif;
+  // border: 1px solid $black;
+}
+
+// html,
+// body {
+//   height: 100%;
+// }
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
